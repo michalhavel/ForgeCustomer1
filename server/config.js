@@ -23,18 +23,16 @@ module.exports = {
   // Autodesk Forge configuration
 
   // this this callback URL when creating your client ID and secret
-  // callbackURL: process.env.FORGE_CALLBACK_URL || 'https://cadsforge.herokuapp.com/api/forge/callback/oauth',
-  callbackURL: process.env.FORGE_CALLBACK_URL || 'http://localhost:3030/api/forge/callback/oauth',
+  callbackURL: process.env.FORGE_CALLBACK_URL || 'http:/localhost:3000/api/forge/callback/oauth',
 
   // set environment variables or hard-code here
   credentials: {
-    client_id: process.env.FORGE_CLIENT_ID || 'ET3t9fEvOyCOJkcjbS2U1Y6PGzQOtwf1',
-    client_secret: process.env.FORGE_CLIENT_SECRET || 'GItbIUFkjI6nlVVf'
+    client_id: process.env.FORGE_CLIENT_ID || '0aH5jNS7R4c94hpvB51uyABPGmiIPRw6',
+    client_secret: process.env.FORGE_CLIENT_SECRET || 'rGiH2L13FjvPaDFw'
   },
 
   // Required scopes for your application on server-side
-  scopeInternal: ['data:read', 'data:write', 'data:create', 'data:search',
-  'bucket:create', 'bucket:read', 'bucket:update', 'bucket:delete'],
+  scopeInternal: ['data:read','data:write','data:create','data:search'],
   // Required scope of the token sent to the client
   scopePublic: ['viewables:read']
 };
